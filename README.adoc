@@ -1,0 +1,30 @@
+= Погода через CompletableFuture
+
+Небольшой пример использования `CompletableFuture`.
+
+Программа:
+
+. Определяет локацию пользователя.
+Для этого она идёт в интернет и по IP-адресу определяет местоположение через сервис https://ipinfo.io/[inpinfo.io]
+. Выводит город, где находится пользователь
+. Узнает погоду в городе через http://www.7timer.info/[7 timer info]
+. Выводит краткое описание погоды
+
+== Пример запуска
+
+[source,text]
+----
+You are in Moscow
+It is cloudy in Moscow
+----
+
+== О CompletableFuture
+
+* https://www.youtube.com/watch?v=W7iK74YA5NM[Сергей Куксенко - Как сделать CompletableFuture еще быстрее (советы и трюки по производительности)].
+Сергей в докладе рассказывает не только, как сделать быстрее `CompletableFuture`, но и как запомнить все методы в нём, а также разницу между методами с суффиксом `async` и без него
+* https://www.youtube.com/watch?v=hqR41XVx3kM[Дмитрий Чуйко — CompletableFuture. Хочется взять и применить]
+
+== О ForkJoinPool
+
+* https://www.youtube.com/watch?v=_2ciDWeeXJQ[RU Fork Join особенности реализации.... (А. Шипилёв и С. Куксенко, Россия)]
+* https://www.youtube.com/watch?v=t0dGLFtRR9c[Алексей Шипилёв — ForkJoinPool в Java 8]
